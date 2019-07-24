@@ -1,5 +1,5 @@
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #990000;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -51,7 +51,7 @@ div#memory_board{
   height: 540px;
   padding: 25px;
   margin: 0px auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 
