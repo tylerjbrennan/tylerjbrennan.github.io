@@ -1,4 +1,4 @@
-var memory_array = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","Negro","White","Blanco","Yellow","Amarillo","Orange", "Naranja", "Pink", "Rosada","Purple","Morado","Brown","Marron","Grey","Gris","Indigo","Indigo"];
+var memory_array_colors = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","Negro","White","Blanco","Yellow","Amarillo","Orange", "Naranja", "Pink", "Rosada","Purple","Morado","Brown","Marron","Grey","Gris","Indigo","Indigo"];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -14,9 +14,9 @@ Array.prototype.memory_tile_shuffle = function(){
 function newBoard(){
 	tiles_flipped = 0;
 	var output = '';
-        memory_array.memory_tile_shuffle();
-	for(var i = 0; i < memory_array.length; i++){
-		output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array[i]+'\')"></div>';
+        memory_array_colors.memory_tile_shuffle();
+	for(var i = 0; i < memory_array_colors.length; i++){
+		output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array_colors[i]+'\')"></div>';
 	}
 	document.getElementById('memory_board').innerHTML = output;
 }
@@ -36,7 +36,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -48,7 +48,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -60,7 +60,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -72,7 +72,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -84,7 +84,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -96,7 +96,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -108,7 +108,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -120,7 +120,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -132,7 +132,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -144,7 +144,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -156,7 +156,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
@@ -168,7 +168,7 @@ function memoryFlipTile(tile,val){
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
-				if(tiles_flipped == memory_array.length){
+				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
