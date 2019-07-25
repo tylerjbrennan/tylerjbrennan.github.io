@@ -1,4 +1,7 @@
 var memory_array_colors = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","Negro","White","Blanco","Yellow","Amarillo","Orange", "Naranja", "Pink", "Rosada","Purple","Morado","Brown","Marron","Grey","Gris","Indigo","Indigo"];
+var memory_array_transportation = ["Car", "Train", "Airplane", "Bus", "Walk", "Run", "Bicycle"];
+var memory_array_sports = ["Basketball", "Baseball", "Golf", "Football", "Soccer", "Hockey"];
+var memory_array_numbers = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -11,7 +14,7 @@ Array.prototype.memory_tile_shuffle = function(){
         this[i] = temp;
     }
 }
-function newBoard(){
+function Colors(){
 	tiles_flipped = 0;
 	var output = '';
         memory_array_colors.memory_tile_shuffle();
@@ -39,7 +42,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Blue" && memory_values[1] == "Azul") || (memory_values[0] == "Azul" && memory_values[1] == "Blue")){
@@ -51,7 +54,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Green" && memory_values[1] == "Verde") || (memory_values[0] == "Verde" && memory_values[1] == "Green")){
@@ -63,7 +66,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Black" && memory_values[1] == "Negro") || (memory_values[0] == "Negro" && memory_values[1] == "Black")){
@@ -75,7 +78,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			} 
 			else if((memory_values[0] == "White" && memory_values[1] == "Blanco") || (memory_values[0] == "Blanco" && memory_values[1] == "White")){
@@ -87,7 +90,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Yellow" && memory_values[1] == "Amarillo") || (memory_values[0] == "Amarillo" && memory_values[1] == "Yellow")){
@@ -99,7 +102,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			} 
 			else if((memory_values[0] == "Orange" && memory_values[1] == "Naranja") || (memory_values[0] == "Naranja" && memory_values[1] == "Orange")){
@@ -111,7 +114,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Pink" && memory_values[1] == "Rosada") || (memory_values[0] == "Rosada" && memory_values[1] == "Pink")){
@@ -123,7 +126,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Purple" && memory_values[1] == "Morado") || (memory_values[0] == "Morado" && memory_values[1] == "Purple")){
@@ -135,7 +138,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Brown" && memory_values[1] == "Marron") || (memory_values[0] == "Marron" && memory_values[1] == "Brown")){
@@ -147,7 +150,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			}
 			else if((memory_values[0] == "Grey" && memory_values[1] == "Gris") || (memory_values[0] == "Gris" && memory_values[1] == "Grey")){
@@ -159,7 +162,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			} 
 			else if((memory_values[0] == "Indigo" && memory_values[1] == "Indigo") || (memory_values[0] == "Indigo" && memory_values[1] == "Indigo")){
@@ -171,7 +174,7 @@ function memoryFlipTile(tile,val){
 				if(tiles_flipped == memory_array_colors.length){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
-					newBoard();
+					Colors();
 				}
 			} 
 			else {
