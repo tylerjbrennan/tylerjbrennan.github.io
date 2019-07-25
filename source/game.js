@@ -19,11 +19,11 @@ function Colors(){
 	var output = '';
         memory_array_colors.memory_tile_shuffle();
 	for(var i = 0; i < memory_array_colors.length; i++){
-		output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array_colors[i]+'\')"></div>';
+		output += '<div id="tile_'+i+'" onclick="memoryColors(this,\''+memory_array_colors[i]+'\')"></div>';
 	}
 	document.getElementById('memory_board').innerHTML = output;
 }
-function memoryFlipTile(tile,val){
+function memoryColors(tile,val){
 	if(tile.innerHTML == "" && memory_values.length < 2){
 		tile.style.background = '#FFF';
 		tile.innerHTML = val;
