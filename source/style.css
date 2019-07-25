@@ -45,11 +45,6 @@
 .dropdown:hover .dropbtn {
   background-color: #990000;
 }
-h3{
-  font-size: 36px;
-  color: #990000;
-  letter-spacing: 2px;
-}
 
 div#memory_board{
   background:#4a4949;
