@@ -832,7 +832,7 @@ function memoryPhrases(tile,val){
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			} 
-			else if((memory_values[0] == "Hello!" && memory_values[1] == "¡Hola! ") || (memory_values[0] == "¡Hola! " && memory_values[1] == "Hello!")){
+			else if((memory_values[0] == "Hello!" && memory_values[1] == "¡Hola!") || (memory_values[0] == "¡Hola!" && memory_values[1] == "Hello!")){
 				tiles_flipped += 2;
 				// Clear both arrays
 				memory_values = [];
