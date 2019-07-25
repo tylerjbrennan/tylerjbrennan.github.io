@@ -198,9 +198,9 @@ function memoryColors(tile,val){
 function Numbers(){
 	tiles_flipped = 0;
 	var output = '';
-        memory_array_colors.memory_tile_shuffle();
-	for(var i = 0; i < memory_array_colors.length; i++){
-		output += '<div id="tile_'+i+'" onclick="memoryNumbers(this,\''+memory_array_colors[i]+'\')"></div>';
+        memory_array_numbers.memory_tile_shuffle();
+	for(var i = 0; i < memory_array_numbers.length; i++){
+		output += '<div id="tile_'+i+'" onclick="memoryNumbers(this,\''+memory_array_numbers[i]+'\')"></div>';
 	}
 	document.getElementById('memory_board').innerHTML = output;
 }
