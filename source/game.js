@@ -2,7 +2,7 @@ var memory_array_colors = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","
 var memory_array_transportation = ["Car", "Coche", "Train", "Tren", "Airplane","Avión", "Bus", "Autobús", "Boat", "Bote", "Motorcycle", "Motocicleta", "Walk (verb)", "Caminar", "Run (verb)", "Correr", "Bicycle", "Bicicleta", "Helicopter", "Helicóptero", "Airport", "Aeropuerto", "Drive (verb)", "Conducir"];
 var memory_array_sports = ["Basketball", "Basquetbol", "Baseball", "Béisbol", "Golf", "Golf", "Football", "Fútbol Americano", "Soccer", "Fútbol", "Karate", "Kárate", "Tennis", "Tenis", "Volleyball", "Voleibol", "Boxing", "Boxeo", "Hunting", "Caza", "Rowing", "Remo", "Swimming", "Natación"];
 var memory_array_numbers = ["One", "Uno", "Two", "Dos", "Three", "Tres", "Four","Cuatro", "Five", "Cinco", "Six","Seis", "Seven","Siete", "Eight","Ocho", "Nine","Nueve", "Ten","Diez", "Eleven","Once", "Twelve", "Doce"];
-var memory_array_phrases = ["Good morning","Buenos días","Good evening","Buenas noches","Goodbye","Adiós","Please","Por favor","Thank you","Gracías","Who?","¿Quièn?","Why?","¿Por què?","I'm sorry","Lo siento","Excuse me","Perdóname","How are you?","¿Cómo está?","What’s your name?","¿Cómo te llamas?","Hello!","¡Hola!"];
+var memory_array_phrases = ["Good morning","Buenos días","Good evening","Buenas noches","Goodbye","Adiós","Please","Por favor","Thank you","Gracías","Who?","¿Quièn?","Why?","¿Por què?","Sorry","Lo siento","Excuse me","Perdóname","How are you?","¿Cómo está?","What’s your name?","¿Cómo te llamas?","Hello!","¡Hola!"];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -788,7 +788,7 @@ function memoryPhrases(tile,val){
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
-			else if((memory_values[0] == "I'm sorry" && memory_values[1] == "Lo siento") || (memory_values[0] == "Lo siento" && memory_values[1] == "I'm sorry")){
+			else if((memory_values[0] == "Sorry" && memory_values[1] == "Lo siento") || (memory_values[0] == "Lo siento" && memory_values[1] == "Sorry")){
 				tiles_flipped += 2;
 				// Clear both arrays
 				memory_values = [];
