@@ -1,6 +1,6 @@
-var memory_array_colors = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","Negro","White","Blanco","Yellow","Amarillo","Orange", "Naranja", "Pink", "Rosada","Purple","Morado","Brown","Marron","Grey","Gris","Indigo","Indigo"];
-var memory_array_transportation = ["Car", "Train", "Airplane", "Bus", "Walk", "Run", "Bicycle"];
-var memory_array_sports = ["Basketball", "Baseball", "Golf", "Football", "Soccer", "Hockey"];
+var memory_array_colors = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","Negro","White","Blanco","Yellow","Amarillo","Orange", "Naranja", "Pink", "Rosada","Purple","Morado","Brown","Marrón","Grey","Gris","Turquoise","Indigo"];
+var memory_array_transportation = ["Car", "Train", "Airplane", "Bus", "Boat", "Motorcycle", "Walk", "Run", "Bicycle"];
+var memory_array_sports = ["Basketball", "Basquetbol", "Baseball", "Béisbol", "Golf", "Golf", "Football", "Fútbol Americano", "Soccer", "Fútbol", "Karate", "Kárate", "Tennis", "Tenis", "Volleyball", "Voleibol", "Boxing", "Boxeo", "Hunting", "Caza", "Rowing", "Remo", "Swimming", "Natación"];
 var memory_array_numbers = ["One", "Uno", "Two", "Dos", "Three", "Tres", "Four","Cuatro", "Five", "Cinco", "Six","Seis", "Seven","Siete", "Eight","Ocho", "Nine","Nueve", "Ten","Diez", "Eleven","Once", "Twelve", "Doce"];
 var memory_values = [];
 var memory_tile_ids = [];
@@ -40,9 +40,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Blue" && memory_values[1] == "Azul") || (memory_values[0] == "Azul" && memory_values[1] == "Blue")){
@@ -52,9 +51,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Green" && memory_values[1] == "Verde") || (memory_values[0] == "Verde" && memory_values[1] == "Green")){
@@ -64,9 +62,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Black" && memory_values[1] == "Negro") || (memory_values[0] == "Negro" && memory_values[1] == "Black")){
@@ -76,9 +73,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			} 
 			else if((memory_values[0] == "White" && memory_values[1] == "Blanco") || (memory_values[0] == "Blanco" && memory_values[1] == "White")){
@@ -88,9 +84,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Yellow" && memory_values[1] == "Amarillo") || (memory_values[0] == "Amarillo" && memory_values[1] == "Yellow")){
@@ -100,9 +95,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			} 
 			else if((memory_values[0] == "Orange" && memory_values[1] == "Naranja") || (memory_values[0] == "Naranja" && memory_values[1] == "Orange")){
@@ -112,9 +106,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Pink" && memory_values[1] == "Rosada") || (memory_values[0] == "Rosada" && memory_values[1] == "Pink")){
@@ -124,9 +117,8 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Purple" && memory_values[1] == "Morado") || (memory_values[0] == "Morado" && memory_values[1] == "Purple")){
@@ -136,21 +128,19 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
-			else if((memory_values[0] == "Brown" && memory_values[1] == "Marron") || (memory_values[0] == "Marron" && memory_values[1] == "Brown")){
+			else if((memory_values[0] == "Brown" && memory_values[1] == "Marrón") || (memory_values[0] == "Marrón" && memory_values[1] == "Brown")){
 				tiles_flipped += 2;
 				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			}
 			else if((memory_values[0] == "Grey" && memory_values[1] == "Gris") || (memory_values[0] == "Gris" && memory_values[1] == "Grey")){
@@ -160,21 +150,19 @@ function memoryColors(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			} 
-			else if((memory_values[0] == "Indigo" && memory_values[1] == "Indigo") || (memory_values[0] == "Indigo" && memory_values[1] == "Indigo")){
+			else if((memory_values[0] == "Turquoise" && memory_values[1] == "Turquesa") || (memory_values[0] == "Turquesa" && memory_values[1] == "Turquoise")){
 				tiles_flipped += 2;
 				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_colors.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
-					Colors();
 				}
 			} 
 			else {
@@ -221,7 +209,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -232,7 +220,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -243,7 +231,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -254,7 +242,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			} 
@@ -265,7 +253,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -276,7 +264,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			} 
@@ -287,7 +275,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -298,7 +286,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -309,7 +297,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -320,7 +308,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			}
@@ -331,7 +319,7 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			} 
@@ -342,7 +330,176 @@ function memoryNumbers(tile,val){
             			memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
-					alert("Congratulations!");
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else {
+				function flip2Back(){
+				    // Flip the 2 tiles back over
+				    var tile_1 = document.getElementById(memory_tile_ids[0]);
+				    var tile_2 = document.getElementById(memory_tile_ids[1]);
+				    tile_1.style.background = '#990000';
+            	    		    tile_1.innerHTML = "";
+				    tile_2.style.background = '#990000';
+            	    		    tile_2.innerHTML = "";
+				    // Clear both arrays
+				    memory_values = [];
+            	   		    memory_tile_ids = [];
+				}
+				setTimeout(flip2Back, 700);
+			}
+		}
+	}
+}
+function Sports(){
+	tiles_flipped = 0;
+	var output = '';
+        memory_array_sports.memory_tile_shuffle();
+	for(var i = 0; i < memory_array_sports.length; i++){
+		output += '<div id="tile_'+i+'" onclick="memorySports(this,\''+memory_array_sports[i]+'\')"></div>';
+	}
+	document.getElementById('memory_board').innerHTML = output;
+}
+function memorySports(tile,val){
+	if(tile.innerHTML == "" && memory_values.length < 2){
+		tile.style.background = '#FFF';
+		tile.innerHTML = val;
+		if(memory_values.length == 0){
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+		} else if(memory_values.length == 1){
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+			if((memory_values[0] == "Basketball" && memory_values[1] == "Basquetbol") || (memory_values[0] == "Basquetbol" && memory_values[1] == "Basketball")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Baseball" && memory_values[1] == "Béisbol") || (memory_values[0] == "Béisbol" && memory_values[1] == "Baseball")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Golf" && memory_values[1] == "Golf") || (memory_values[0] == "Golf" && memory_values[1] == "Golf")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Football" && memory_values[1] == "Fútbol Americano") || (memory_values[0] == "Fútbol Americano" && memory_values[1] == "Football")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else if((memory_values[0] == "Soccer" && memory_values[1] == "Fútbol") || (memory_values[0] == "Fútbol" && memory_values[1] == "Soccer")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Kárate" && memory_values[1] == "Karate") || (memory_values[0] == "Karate" && memory_values[1] == "Kárate")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else if((memory_values[0] == "Tennis" && memory_values[1] == "Tenis") || (memory_values[0] == "Tenis" && memory_values[1] == "Tennis")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Volleyball" && memory_values[1] == "Voleibol") || (memory_values[0] == "Voleibol" && memory_values[1] == "Volleyball")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Boxing" && memory_values[1] == "Boxeo") || (memory_values[0] == "Boxeo" && memory_values[1] == "Boxing")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Hunting" && memory_values[1] == "Caza") || (memory_values[0] == "Caza" && memory_values[1] == "Hunting")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Rowing" && memory_values[1] == "Remo") || (memory_values[0] == "Remo" && memory_values[1] == "Rowing")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else if((memory_values[0] == "Swimming" && memory_values[1] == "Natación") || (memory_values[0] == "Natación" && memory_values[1] == "Swimming")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_sports.length){
+					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
 				}
 			} 
