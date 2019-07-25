@@ -1,7 +1,7 @@
 var memory_array_colors = ["Red","Rojo","Blue","Azul","Green","Verde", "Black","Negro","White","Blanco","Yellow","Amarillo","Orange", "Naranja", "Pink", "Rosada","Purple","Morado","Brown","Marron","Grey","Gris","Indigo","Indigo"];
 var memory_array_transportation = ["Car", "Train", "Airplane", "Bus", "Walk", "Run", "Bicycle"];
 var memory_array_sports = ["Basketball", "Baseball", "Golf", "Football", "Soccer", "Hockey"];
-var memory_array_numbers = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
+var memory_array_numbers = ["One", "Uno", "Two", "Dos", "Three", "Tres", "Four","Cuatro", "Five", "Cinco", "Six","Seis", "Seven","Siete", "Eight","Ocho", "Nine","Nueve", "Ten","Diez", "Eleven","Once", "Twelve", "Doce"];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -175,6 +175,175 @@ function memoryColors(tile,val){
 					alert("Congratulations!");
 					document.getElementById('memory_board').innerHTML = "";
 					Colors();
+				}
+			} 
+			else {
+				function flip2Back(){
+				    // Flip the 2 tiles back over
+				    var tile_1 = document.getElementById(memory_tile_ids[0]);
+				    var tile_2 = document.getElementById(memory_tile_ids[1]);
+				    tile_1.style.background = '#990000';
+            	    		    tile_1.innerHTML = "";
+				    tile_2.style.background = '#990000';
+            	    		    tile_2.innerHTML = "";
+				    // Clear both arrays
+				    memory_values = [];
+            	   		    memory_tile_ids = [];
+				}
+				setTimeout(flip2Back, 700);
+			}
+		}
+	}
+}
+function Numbers(){
+	tiles_flipped = 0;
+	var output = '';
+        memory_array_colors.memory_tile_shuffle();
+	for(var i = 0; i < memory_array_colors.length; i++){
+		output += '<div id="tile_'+i+'" onclick="memoryNumbers(this,\''+memory_array_colors[i]+'\')"></div>';
+	}
+	document.getElementById('memory_board').innerHTML = output;
+}
+function memoryNumbers(tile,val){
+	if(tile.innerHTML == "" && memory_values.length < 2){
+		tile.style.background = '#FFF';
+		tile.innerHTML = val;
+		if(memory_values.length == 0){
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+		} else if(memory_values.length == 1){
+			memory_values.push(val);
+			memory_tile_ids.push(tile.id);
+			if((memory_values[0] == "One" && memory_values[1] == "Uno") || (memory_values[0] == "Uno" && memory_values[1] == "One")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Two" && memory_values[1] == "Dos") || (memory_values[0] == "Dos" && memory_values[1] == "Two")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Three" && memory_values[1] == "Tres") || (memory_values[0] == "Tres" && memory_values[1] == "Three")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Four" && memory_values[1] == "Cuatro") || (memory_values[0] == "Cuatro" && memory_values[1] == "Four")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else if((memory_values[0] == "Five" && memory_values[1] == "Cinco") || (memory_values[0] == "Cinco" && memory_values[1] == "Five")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Six" && memory_values[1] == "Seis") || (memory_values[0] == "Seis" && memory_values[1] == "Six")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else if((memory_values[0] == "Seven" && memory_values[1] == "Siete") || (memory_values[0] == "Siete" && memory_values[1] == "Seven")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Eight" && memory_values[1] == "Ocho") || (memory_values[0] == "Ocho" && memory_values[1] == "Eight")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Nine" && memory_values[1] == "Nueve") || (memory_values[0] == "Nueve" && memory_values[1] == "Nine")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Ten" && memory_values[1] == "Diez") || (memory_values[0] == "Diez" && memory_values[1] == "Ten")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			}
+			else if((memory_values[0] == "Eleven" && memory_values[1] == "Once") || (memory_values[0] == "Once" && memory_values[1] == "Eleven")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
+				}
+			} 
+			else if((memory_values[0] == "Twelve" && memory_values[1] == "Doce") || (memory_values[0] == "Doce" && memory_values[1] == "Twelve")){
+				tiles_flipped += 2;
+				// Clear both arrays
+				memory_values = [];
+            			memory_tile_ids = [];
+				// Check to see if the whole board is cleared
+				if(tiles_flipped == memory_array_numbers.length){
+					alert("Congratulations!");
+					document.getElementById('memory_board').innerHTML = "";
 				}
 			} 
 			else {
