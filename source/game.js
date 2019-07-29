@@ -422,10 +422,8 @@ function memoryNumbers(tile,val){
 			} 
 			else if((memory_values[0] == "Twelve" && memory_values[1] == "Doce") || (memory_values[0] == "Doce" && memory_values[1] == "Twelve")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_numbers.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -433,18 +431,16 @@ function memoryNumbers(tile,val){
 			} 
 			else {
 				function flip2Back(){
-				    // Flip the 2 tiles back over
 				    var tile_1 = document.getElementById(memory_tile_ids[0]);
 				    var tile_2 = document.getElementById(memory_tile_ids[1]);
 				    tile_1.style.background = '#990000';
             	    		    tile_1.innerHTML = "";
 				    tile_2.style.background = '#990000';
             	    		    tile_2.innerHTML = "";
-				    // Clear both arrays
 				    memory_values = [];
             	   		    memory_tile_ids = [];
 				}
-				setTimeout(flip2Back, 700);
+				setTimeout(flip2Back, 500);
 			}
 		}
 	}
@@ -470,10 +466,8 @@ function memorySports(tile,val){
 			memory_tile_ids.push(tile.id);
 			if((memory_values[0] == "Basketball" && memory_values[1] == "Basquetbol") || (memory_values[0] == "Basquetbol" && memory_values[1] == "Basketball")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -481,10 +475,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Baseball" && memory_values[1] == "Béisbol") || (memory_values[0] == "Béisbol" && memory_values[1] == "Baseball")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -492,10 +484,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Golf" && memory_values[1] == "Golf") || (memory_values[0] == "Golf" && memory_values[1] == "Golf")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -503,10 +493,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Football" && memory_values[1] == "Fútbol Americano") || (memory_values[0] == "Fútbol Americano" && memory_values[1] == "Football")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -514,10 +502,8 @@ function memorySports(tile,val){
 			} 
 			else if((memory_values[0] == "Soccer" && memory_values[1] == "Fútbol") || (memory_values[0] == "Fútbol" && memory_values[1] == "Soccer")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -525,10 +511,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Kárate" && memory_values[1] == "Karate") || (memory_values[0] == "Karate" && memory_values[1] == "Kárate")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -536,10 +520,8 @@ function memorySports(tile,val){
 			} 
 			else if((memory_values[0] == "Tennis" && memory_values[1] == "Tenis") || (memory_values[0] == "Tenis" && memory_values[1] == "Tennis")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -547,10 +529,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Volleyball" && memory_values[1] == "Voleibol") || (memory_values[0] == "Voleibol" && memory_values[1] == "Volleyball")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -558,10 +538,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Boxing" && memory_values[1] == "Boxeo") || (memory_values[0] == "Boxeo" && memory_values[1] == "Boxing")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -569,10 +547,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Hunting" && memory_values[1] == "Caza") || (memory_values[0] == "Caza" && memory_values[1] == "Hunting")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -580,10 +556,8 @@ function memorySports(tile,val){
 			}
 			else if((memory_values[0] == "Rowing" && memory_values[1] == "Remo") || (memory_values[0] == "Remo" && memory_values[1] == "Rowing")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -591,10 +565,8 @@ function memorySports(tile,val){
 			} 
 			else if((memory_values[0] == "Swimming" && memory_values[1] == "Natación") || (memory_values[0] == "Natación" && memory_values[1] == "Swimming")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_sports.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -602,18 +574,16 @@ function memorySports(tile,val){
 			} 
 			else {
 				function flip2Back(){
-				    // Flip the 2 tiles back over
 				    var tile_1 = document.getElementById(memory_tile_ids[0]);
 				    var tile_2 = document.getElementById(memory_tile_ids[1]);
 				    tile_1.style.background = '#990000';
             	    		    tile_1.innerHTML = "";
 				    tile_2.style.background = '#990000';
             	    		    tile_2.innerHTML = "";
-				    // Clear both arrays
 				    memory_values = [];
             	   		    memory_tile_ids = [];
 				}
-				setTimeout(flip2Back, 700);
+				setTimeout(flip2Back, 500);
 			}
 		}
 	}
@@ -639,10 +609,8 @@ function memoryPhrases(tile,val){
 			memory_tile_ids.push(tile.id);
 			if((memory_values[0] == "Good morning" && memory_values[1] == "Buenos días") || (memory_values[0] == "Buenos días" && memory_values[1] == "Good morning")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -650,10 +618,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "Buenas noches" && memory_values[1] == "Good evening") || (memory_values[0] == "Good evening" && memory_values[1] == "Buenas noches")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -661,10 +627,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "Goodbye" && memory_values[1] == "Adiós") || (memory_values[0] == "Adiós" && memory_values[1] == "Goodbye")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -672,10 +636,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "Please" && memory_values[1] == "Por favor") || (memory_values[0] == "Por favor" && memory_values[1] == "Please")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -683,10 +645,8 @@ function memoryPhrases(tile,val){
 			} 
 			else if((memory_values[0] == "Thank you" && memory_values[1] == "Gracías") || (memory_values[0] == "Gracías" && memory_values[1] == "Thank you")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -694,10 +654,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "Who?" && memory_values[1] == "¿Quièn?") || (memory_values[0] == "¿Quièn?" && memory_values[1] == "Who?")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -705,10 +663,8 @@ function memoryPhrases(tile,val){
 			} 
 			else if((memory_values[0] == "Why?" && memory_values[1] == "¿Por què?") || (memory_values[0] == "¿Por què?" && memory_values[1] == "Why?")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -716,10 +672,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "Sorry" && memory_values[1] == "Lo siento") || (memory_values[0] == "Lo siento" && memory_values[1] == "Sorry")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -727,10 +681,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "Excuse me" && memory_values[1] == "Perdóname") || (memory_values[0] == "Perdóname" && memory_values[1] == "Excuse me")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -738,10 +690,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "How are you?" && memory_values[1] == "¿Cómo está?") || (memory_values[0] == "¿Cómo está?" && memory_values[1] == "How are you?")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -749,10 +699,8 @@ function memoryPhrases(tile,val){
 			}
 			else if((memory_values[0] == "What’s your name?" && memory_values[1] == "¿Cómo te llamas?") || (memory_values[0] == "¿Cómo te llamas?" && memory_values[1] == "What’s your name?")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -760,10 +708,8 @@ function memoryPhrases(tile,val){
 			} 
 			else if((memory_values[0] == "Hello!" && memory_values[1] == "¡Hola!") || (memory_values[0] == "¡Hola!" && memory_values[1] == "Hello!")){
 				tiles_flipped += 2;
-				// Clear both arrays
 				memory_values = [];
             			memory_tile_ids = [];
-				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array_phrases.length){
 					alert("Congratulations! Choose a category to play again.");
 					document.getElementById('memory_board').innerHTML = "";
@@ -771,18 +717,16 @@ function memoryPhrases(tile,val){
 			} 
 			else {
 				function flip2Back(){
-				    // Flip the 2 tiles back over
 				    var tile_1 = document.getElementById(memory_tile_ids[0]);
 				    var tile_2 = document.getElementById(memory_tile_ids[1]);
 				    tile_1.style.background = '#990000';
             	    		    tile_1.innerHTML = "";
 				    tile_2.style.background = '#990000';
             	    		    tile_2.innerHTML = "";
-				    // Clear both arrays
 				    memory_values = [];
             	   		    memory_tile_ids = [];
 				}
-				setTimeout(flip2Back, 700);
+				setTimeout(flip2Back, 500);
 			}
 		}
 	}
